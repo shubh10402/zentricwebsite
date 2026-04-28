@@ -14,7 +14,7 @@ export default function Contact() {
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
+        
         className="max-w-xl mx-auto space-y-4"
       >
         <input type="hidden" name="form-name" value="contact" />
