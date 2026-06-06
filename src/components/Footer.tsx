@@ -1,7 +1,8 @@
 // components/FooterCustom.tsx
 
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaGithub, FaInstagram, FaHeart } from "react-icons/fa";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+
 
 export default function FooterCustom() {
   return (
@@ -29,10 +30,11 @@ export default function FooterCustom() {
             </h3>
             <div className="space-y-4 text-lg">
               <p className="flex items-center gap-2 hover:text-white transition ">
-                <HiOutlineMail /> hello@zentric.com
+                
+                <HiOutlineMail /> zentrictechnologies@gmail.com
               </p>
               <p className="flex items-center gap-2 hover:text-white transition">
-                <HiOutlinePhone /> +91 XXXXX XXXXX
+                <HiOutlinePhone /> +91-9925990550
               </p>
             </div>
           </div>
@@ -62,9 +64,19 @@ export default function FooterCustom() {
             Social Media
           </h3>
           <div className="flex gap-6  text-2xl">
-            <FaLinkedin className="cursor-pointer hover:text-white transition hover:scale-110" />
-            <FaTwitter className="cursor-pointer hover:text-white transition hover:scale-110" />
-            <FaGithub className="cursor-pointer hover:text-white transition hover:scale-110" />
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">       
+              <FaLinkedin className="cursor-pointer hover:text-white transition hover:scale-110" />
+            </a>
+            <a href="https://x.com/zentrictec29692" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="cursor-pointer hover:text-white transition hover:scale-110" />
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="cursor-pointer hover:text-white transition hover:scale-110" />
+            </a>
+             <a href="https://www.instagram.com/zentrictechnologies/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="cursor-pointer hover:text-white transition hover:scale-110" />
+            </a>
+            
           </div>
         </div>
           </div>
@@ -76,7 +88,10 @@ export default function FooterCustom() {
       
         {/* BOTTOM BAR */}
         <div className="flex flex-col md:flex-row justify-between items-center text-base text-gray-500 pt-6 border-t border-gray-800">
-          <p>Design & Developed by Zentric Technologies</p>
+          <p className="flex items-center gap-2">
+            <FaHeart className="text-red-500"/>
+            Design & Developed by Zentric Technologies
+          </p>
           <p className="mt-2 md:mt-0">
             © {new Date().getFullYear()} All rights reserved
           </p>
