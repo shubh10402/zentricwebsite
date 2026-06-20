@@ -10,7 +10,7 @@ import WhyUs from "@/components/sections/Whyus";
 export default function Home()
 {
   return (
-    <main className="p-5 text-white bg-black min-h-screen">
+    <main className="p-5 text-black bg-white min-h-screen">
       {/* <h1 className="text-3xl font-bold">
         Zentric Website
       </h1> */}

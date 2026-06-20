@@ -21,7 +21,7 @@ export default function WhyUs() {
   ];
 
   return (
-    <section className="py-20 px-8 bg-[#0a0a0a]">
+    <section className="py-20 px-8 bg-gray-50">
       
       {/* Heading */}
       <div className="text-center mb-12">
@@ -36,9 +36,9 @@ export default function WhyUs() {
         {points.map((item, index) => (
           <div
             key={index}
-            className="flex items-start space-x-4 p-6 border border-gray-800 rounded-xl hover:bg-gray-900 transition"
+            className="flex items-start space-x-4 p-6 border border-gray-200 rounded-xl hover:bg-gray-100 transition"
           >
-            <CheckCircle className="text-orange-500 mt-1" />
+            <CheckCircle className="text-blue-600 mt-1 shrink-0" />
 
             <div>
               <h3 className="text-lg font-semibold">{item.title}</h3>

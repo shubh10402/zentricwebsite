@@ -1,37 +1,29 @@
 import Link from "next/link";
-import Contact from "./sections/Contact";
 
-export default function Navbar()
-{
-    return(
-        <nav className="sticky top-0 z-50 backdrop-blur-md bg-black/70 border-b flex justify-between items-center px-5 py-2.5  border-gray-800 ">
+export default function Navbar() {
+  return (
+    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-blue-100 flex justify-between items-center px-5 py-2.5">
+      <h1 className="font-bold px-3 text-blue-600">Zentric Logo</h1>
 
-          {/* LOGO */}
-            <h1 className="font-bold px-3">Zentric Logo</h1>
+      <div className="flex items-center space-x-6">
+        <div className="hidden md:flex space-x-6">
+          <Link href="/" className="hover:text-blue-600 transition">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-blue-600 transition">
+            About
+          </Link>
+          <Link href="/services" className="hover:text-blue-600 transition">
+            Services
+          </Link>
+        </div>
 
-
-            {/* Right Side */}
-             <div className="flex items-center space-x-6">
-
-        {/* Hidden in mobile */}
-       <div className="hidden md:flex space-x-6">
-         <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/services">Services</Link>
-       </div>
-
-
-       {/* //Contact Button Visible every whre */}
-       <a href="#contact">
-  <button className="bg-orange-500 px-4 py-2 rounded-lg">
-    Contact
-  </button>
-</a>
+        <Link href="/#contact">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">
+            Contact
+          </button>
+        </Link>
       </div>
-
-      {/* //Contact Button Visible every whre */}
-      
-        </nav>
-    )
+    </nav>
+  );
 }
-

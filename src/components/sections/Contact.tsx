@@ -44,7 +44,7 @@ export default function Contact() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full p-3 rounded-lg bg-black border border-gray-800"
+          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
           required
         />
 
@@ -52,13 +52,13 @@ export default function Contact() {
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-full p-3 rounded-lg bg-black border border-gray-800"
+          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
           required
         />
 
         <select
           name="service"
-          className="w-full p-3 rounded-lg bg-black border border-gray-800"
+          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
         >
           <option>Web Development</option>
           <option>UI/UX Design</option>
@@ -70,13 +70,13 @@ export default function Contact() {
           name="message"
           placeholder="Your Message"
           rows={4}
-          className="w-full p-3 rounded-lg bg-black border border-gray-800"
+          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
           required
         />
 
         <button
           type="submit"
-          className="w-full bg-orange-500 hover:bg-orange-600 transition p-3 rounded-lg font-semibold"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white transition p-3 rounded-lg font-semibold shadow-md shadow-blue-200"
         >
           {status === "loading" ? "Sending..." : "Send Message"}
         </button>
