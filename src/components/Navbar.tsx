@@ -10,7 +10,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-blue-600 transition">
             Home
           </Link>
-          <Link href="/about" className="hover:text-blue-600 transition">
+          <Link href="/aboutus" className="hover:text-blue-600 transition">
             About
           </Link>
           <Link href="/services" className="hover:text-blue-600 transition">
@@ -18,7 +18,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <Link href="/#contact">
+        <Link href="/contact">
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition">
             Contact
           </button>

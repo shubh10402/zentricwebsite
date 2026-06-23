@@ -34,12 +34,12 @@ export default function FooterCustom() {
             </h3>
             <div className="space-y-4 text-lg">
               <p className="flex items-center gap-2 hover:text-blue-600 transition">
-                
-                <HiOutlineMail className="text-blue-600" /> zentrictechnologies@gmail.com
+                 <HiOutlineMail className="text-blue-600" /> zentrictechnologies@gmail.com
               </p>
-              <p className="flex items-center gap-2 hover:text-blue-600 transition">
-                <HiOutlinePhone className="text-blue-600" /> +91-9925990550
-              </p>
+             <a href="tel:+919925990550" className="flex items-center gap-2 hover:text-blue-600 transition">
+              <HiOutlinePhone className="text-blue-600" /> +91-9925990550
+              </a>
+             
             </div>
           </div>
 
@@ -74,9 +74,7 @@ export default function FooterCustom() {
             <a href="https://x.com/zentrictec29692" target="_blank" rel="noopener noreferrer">
               <FaTwitter className="cursor-pointer text-gray-500 hover:text-blue-600 transition hover:scale-110" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="cursor-pointer text-gray-500 hover:text-blue-600 transition hover:scale-110" />
-            </a>
+          
              <a href="https://www.instagram.com/zentrictechnologies/" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="cursor-pointer text-gray-500 hover:text-blue-600 transition hover:scale-110" />
             </a>
