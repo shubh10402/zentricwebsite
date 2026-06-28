@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function FooterCustom() {
   return (
-    <footer className="relative bg-gradient-to-br from-blue-50 via-white to-blue-100 text-gray-600 px-6 py-24 border-t border-blue-100 overflow-hidden">
+    <footer className="relative bg-linear-to-br from-blue-50 via-white to-blue-100 text-gray-600 px-6 py-24 border-t border-blue-100 overflow-hidden">
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute -top-24 -right-24 w-72 h-72 bg-blue-200 rounded-full blur-3xl" />
         <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-blue-300 rounded-full blur-3xl" />

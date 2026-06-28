@@ -27,24 +27,30 @@ export default function Contact() {
     }
   }
 
+  const fieldClass =
+    "w-full p-3 rounded-lg bg-white border border-gray-300 text-black placeholder:text-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition";
+
   return (
-    <section id="contact" className="py-20 px-8">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold">Let’s Work Together</h2>
-        <p className="text-gray-400 mt-2">
+    <section id="contact" className="py-24 px-8">
+      <div className="text-center mb-14">
+        <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-3">
+          Get In Touch
+        </p>
+        <h2 className="text-3xl md:text-4xl font-bold">Let’s Work Together</h2>
+        <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
           Have a project in mind? Fill the form and we’ll get back to you.
         </p>
       </div>
 
       <form
         onSubmit={handleSubmit}
-        className="max-w-xl mx-auto space-y-4"
+        className="max-w-xl mx-auto space-y-4 bg-white border border-gray-200 rounded-2xl p-8 shadow-sm"
       >
         <input
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
+          className={fieldClass}
           required
         />
 
@@ -52,31 +58,30 @@ export default function Contact() {
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
+          className={fieldClass}
           required
         />
-
-        <select
+        <input
+          type="text"
           name="service"
-          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
-        >
-          <option>Web Development</option>
-          <option>UI/UX Design</option>
-          <option>SEO</option>
-          <option>Maintenance</option>
-        </select>
+          placeholder="Service"
+          className={fieldClass}
+          required
+        />
+        
 
         <textarea
           name="message"
-          placeholder="Your Message"
+          placeholder="Briefly describe your project"
           rows={4}
-          className="w-full p-3 rounded-lg bg-white border border-gray-300 text-black"
+          className={fieldClass}
           required
         />
 
         <button
           type="submit"
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white transition p-3 rounded-lg font-semibold shadow-md shadow-blue-200"
+          disabled={status === "loading"}
+          className="w-full bg-blue-600 hover:bg-blue-700 disabled:opacity-70 text-white transition p-3 rounded-lg font-semibold shadow-md shadow-blue-200"
         >
           {status === "loading" ? "Sending..." : "Send Message"}
         </button>

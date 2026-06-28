@@ -1,4 +1,3 @@
-
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/sections/Contact";
@@ -6,22 +5,21 @@ import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 import WhyUs from "@/components/sections/Whyus";
 
-export default function Home()
-{
+export default function Home() {
   return (
-    <main className="p-5 text-black bg-white min-h-screen">
-      {/* <h1 className="text-3xl font-bold">
-        Zentric Website
-      </h1> */}
+    <main className="min-h-screen bg-white text-black">
+      <Navbar />
 
-     <Navbar />
+      {/* Hero is a rounded card, so it gets a little breathing room */}
+      <div className="px-5 pt-5">
         <Hero />
-            <Services />
-                <WhyUs />
-                  <Contact />
-                    <Footer/> 
+      </div>
 
-      
+      <Services />
+      <WhyUs />
+      <Contact />
+
+      <Footer />
     </main>
-  )
+  );
 }

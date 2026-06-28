@@ -87,7 +87,7 @@ export default function ServicesPage() {
       <Navbar />
 
       {/* Page hero */}
-      <section className="mx-5 mt-5 text-center py-20 px-6 bg-gradient-to-b from-blue-50 to-white rounded-2xl">
+      <section className="mx-5 mt-5 text-center py-20 px-6 bg-linear-to-b from-blue-50 to-white rounded-2xl">
         <p className="text-blue-600 font-semibold text-sm uppercase tracking-widest mb-4">
           What We Offer
         </p>
@@ -147,7 +147,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="mx-5 mb-5 px-6 py-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl text-center text-white">
+      <section className="mx-5 mb-5 px-6 py-16 bg-linear-to-r from-blue-600 to-blue-700 rounded-2xl text-center text-white">
         <h2 className="text-2xl md:text-3xl font-bold">
           Not sure which service you need?
         </h2>
