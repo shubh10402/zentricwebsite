@@ -2,6 +2,7 @@
 
 import { FaLinkedin, FaTwitter, FaGithub, FaInstagram, FaHeart } from "react-icons/fa";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+import Link from "next/link";
 
 
 export default function FooterCustom() {
@@ -50,16 +51,17 @@ export default function FooterCustom() {
             </h3>
             <ul className="space-y-3 text-lg mb-8">
               <li className="hover:text-blue-600 cursor-pointer transition hover:translate-x-1">
-                Home
+                <Link href="/">Home</Link>
+                
               </li>
               <li className="hover:text-blue-600 cursor-pointer transition hover:translate-x-1">
-                About
+                <Link href="/aboutus">About</Link>
               </li>
               <li className="hover:text-blue-600 cursor-pointer transition hover:translate-x-1">
-                Services
+                <Link href="/services">Services</Link>
               </li>
               <li className="hover:text-blue-600 cursor-pointer transition hover:translate-x-1">
-                Contact
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
                 {/* SOCIAL */}
